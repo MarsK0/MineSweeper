@@ -1,5 +1,7 @@
 # Mine Sweeper
 
+Deploy: https://mine-sweeper-ecru-rho.vercel.app
+
 Projeto criado para exercer lógica e aplicar conhecimentos de typescript.
 
 Para jogar, escolha o tamanho do tabuleiro (Width & Height) e a dificuldate (5 a 100) e clique em New Game! Pode-se alterar as opções a qualquer momento, e para aplicá-las basta clicar novamente em New Game!

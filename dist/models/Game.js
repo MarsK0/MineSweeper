@@ -17,7 +17,7 @@ class Game {
         for (let i = 0; i < (tableSize); i++) {
             possibilities.push(i);
         }
-        this.bombs = Math.ceil((tableSize / 2) * (difficult / 100));
+        this.bombs = Math.ceil((tableSize / (10 / 3)) * (difficult / 100));
         this.clearFields = (this.height * this.width) - this.bombs;
         while (this.bombs > 0) {
             const draft = Math.floor(Math.random() * possibilities.length);

@@ -32,7 +32,7 @@ class Game{
       possibilities.push(i)
     }
 
-    this.bombs = Math.ceil((tableSize/2)*(difficult/100))
+    this.bombs = Math.ceil((tableSize/(10/3))*(difficult/100))
     this.clearFields = (this.height*this.width)-this.bombs
 
     while(this.bombs > 0){

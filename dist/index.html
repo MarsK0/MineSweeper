@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mine Sweeper</title>
+  <script src="https://kit.fontawesome.com/a79d01645b.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="imgs/mine.png">
+</head>
+<body>
+  <div id="menu">
+    <div class="inputContainer">
+      <label for="heightSelector"
+             style="color: #03fc1c">HEIGHT</label>
+      <div class="custom-num" id="height-custom-num">
+        <i class="fa-solid fa-angle-up"></i>
+          <input type="number" 
+                id="heightSelector"
+                class="num-input"
+                min="5"
+                max="15"
+                style="color: #03fc1c">
+        <i class="fa-solid fa-angle-down"></i>
+      </div>
+    </div>
+    <div class="inputContainer">
+      <label for="widthSelector"
+             style="color: #eeff00">WIDTH</label>
+      <div  class="custom-num" id="width-custom-num">
+        <i class="fa-solid fa-angle-up"></i>
+          <input type="number" 
+                id="widthSelector"
+                class="num-input"
+                min="5"
+                style="color: #eeff00">
+        <i class="fa-solid fa-angle-down"></i>
+      </div>
+    </div>
+    <div class="inputContainer">
+      <label for="difficultSelector"
+             style="color: #ff0000">DIFFICULT</label>
+      <div class="custom-num" id="difficult-custom-num">
+        <i class="fa-solid fa-angle-up"></i>
+        <input type="number" 
+              id="difficultSelector"
+              class="num-input"
+              min="5"
+              max="100"
+              step="5"
+              style="color: #ff0000">
+        <i class="fa-solid fa-angle-down"></i>
+      </div>
+    </div>
+    <button id="newGameMenu" class="newGame">New Game!</button>
+  </div>
+  <div id="game">
+    <div id="root"></div>
+  </div>
+</body>
+  <script src="index.js" type="module"></script>
+</html>

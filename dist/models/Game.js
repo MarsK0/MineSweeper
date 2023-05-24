@@ -66,8 +66,10 @@ class Game {
         else {
             setFieldBackground(selectedField, fieldElement);
         }
-        if (checkWin(this.clearFields, this.table))
+        if (checkWin(this.clearFields, this.table)) {
             createModal("win");
+            this.isGameRunning = false;
+        }
     }
     flagField(index) {
         const selectedField = this.table[index];

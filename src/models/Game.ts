@@ -98,7 +98,10 @@ class Game{
       setFieldBackground(selectedField, fieldElement)
     }
 
-    if(checkWin(this.clearFields, this.table)) createModal("win")
+    if(checkWin(this.clearFields, this.table)){
+      createModal("win")
+      this.isGameRunning = false
+    } 
 
   }
 
